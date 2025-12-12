@@ -1,2 +1,2 @@
-export { ContentfulApiError } from "./ContentfulApiError.js";
-export { ContentfulApiTimeoutError } from "./ContentfulApiTimeoutError.js";
+export { ContentfulError } from "./ContentfulError.js";
+export { ContentfulTimeoutError } from "./ContentfulTimeoutError.js";

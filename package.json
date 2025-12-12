@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "version": "0.0.28",
+    "name": "contentful",
+    "version": "11.10.1",
     "private": false,
     "repository": "github:elylucasctfl/fern-typescript",
     "type": "commonjs",

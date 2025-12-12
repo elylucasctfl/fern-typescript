@@ -11,25 +11,25 @@ export function handleNonStatusCodeError(
 ): never {
     switch (error.reason) {
         case "non-json":
-            throw new errors.ContentfulApiError({
+            throw new errors.ContentfulError({
                 statusCode: error.statusCode,
                 body: error.rawBody,
                 rawResponse: rawResponse,
             });
         case "body-is-null":
-            throw new errors.ContentfulApiError({
+            throw new errors.ContentfulError({
                 statusCode: error.statusCode,
                 rawResponse: rawResponse,
             });
         case "timeout":
-            throw new errors.ContentfulApiTimeoutError(`Timeout exceeded when calling ${method} ${path}.`);
+            throw new errors.ContentfulTimeoutError(`Timeout exceeded when calling ${method} ${path}.`);
         case "unknown":
-            throw new errors.ContentfulApiError({
+            throw new errors.ContentfulError({
                 message: error.errorMessage,
                 rawResponse: rawResponse,
             });
         default:
-            throw new errors.ContentfulApiError({
+            throw new errors.ContentfulError({
                 message: "Unknown error",
                 rawResponse: rawResponse,
             });
