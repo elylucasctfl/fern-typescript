@@ -1,3 +1,5 @@
-export type { BaseClientOptions, BaseRequestOptions } from "./BaseClient.js";
+export * as Contentful from "./api/index.js";
 export { ContentfulError, ContentfulTimeoutError } from "./errors/index.js";
-export * from "./exports.js";
+export * as serialization from "./serialization/index.js";
+export { ContentfulClient } from "./Client.js";
+export { ContentfulEnvironment } from "./environments.js";
