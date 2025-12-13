@@ -1,6 +1,6 @@
 {
     "name": "contentful",
-    "version": "11.10.1",
+    "version": "11.10.2",
     "private": false,
     "repository": "github:elylucasctfl/fern-typescript",
     "type": "commonjs",
@@ -48,6 +48,9 @@
         "test": "vitest",
         "test:unit": "vitest --project unit",
         "test:wire": "vitest --project wire"
+    },
+    "dependencies": {
+        "contentful-resolve-response": "^1.9.4"
     },
     "devDependencies": {
         "webpack": "^5.97.1",

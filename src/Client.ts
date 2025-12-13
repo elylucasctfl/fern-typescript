@@ -44,8 +44,8 @@ export class ContentfulClient {
                 {
                     "X-Fern-Language": "JavaScript",
                     "X-Fern-SDK-Name": "contentful",
-                    "X-Fern-SDK-Version": "11.10.1",
-                    "User-Agent": "contentful/11.10.1",
+                    "X-Fern-SDK-Version": "11.10.2",
+                    "User-Agent": "contentful/11.10.2",
                     "X-Fern-Runtime": core.RUNTIME.type,
                     "X-Fern-Runtime-Version": core.RUNTIME.version,
                 },
