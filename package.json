@@ -50,7 +50,7 @@
         "test:wire": "vitest --project wire"
     },
     "dependencies": {
-        "contentful-resolve-response": "^1.9.4"
+        "fast-copy": "^4.0.2"
     },
     "devDependencies": {
         "webpack": "^5.97.1",
