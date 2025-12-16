@@ -16,6 +16,7 @@ export declare namespace ContentfulClient {
         token: core.Supplier<core.BearerToken>;
         /** Additional headers to include in requests. */
         headers?: Record<string, string | core.Supplier<string | null | undefined> | null | undefined>;
+        fetcher?: core.FetchFunction;
     }
 
     export interface RequestOptions {

@@ -17,6 +17,7 @@ export declare namespace ContentTypes {
         token: core.Supplier<core.BearerToken>;
         /** Additional headers to include in requests. */
         headers?: Record<string, string | core.Supplier<string | null | undefined> | null | undefined>;
+        fetcher?: core.FetchFunction;
     }
 
     export interface RequestOptions {
@@ -73,7 +74,7 @@ export class ContentTypes {
             mergeOnlyDefinedHeaders({ Authorization: await this._getAuthorizationHeader() }),
             requestOptions?.headers,
         );
-        const _response = await core.fetcher({
+        const _response = await (this._options.fetcher ?? core.fetcher)({
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
@@ -156,7 +157,7 @@ export class ContentTypes {
             mergeOnlyDefinedHeaders({ Authorization: await this._getAuthorizationHeader() }),
             requestOptions?.headers,
         );
-        const _response = await core.fetcher({
+        const _response = await (this._options.fetcher ?? core.fetcher)({
             url: core.url.join(
                 (await core.Supplier.get(this._options.baseUrl)) ??
                     (await core.Supplier.get(this._options.environment)) ??
