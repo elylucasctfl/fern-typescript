@@ -1,0 +1,16 @@
+{
+    "cliVersion": "3.24.5",
+    "generatorName": "fernapi/fern-typescript-sdk",
+    "generatorVersion": "3.42.4",
+    "generatorConfig": {
+        "namespaceExport": "Contentful",
+        "allowCustomFetcher": true,
+        "config": null,
+        "noSerdeLayer": false,
+        "skipResponseValidation": true,
+        "allowExtraFields": true,
+        "extraDependencies": {
+            "fast-copy": "^4.0.2"
+        }
+    }
+}

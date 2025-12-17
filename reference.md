@@ -1,7 +1,5 @@
 # Reference
-
 ## contentTypes
-
 <details><summary><code>client.contentTypes.<a href="/src/api/resources/contentTypes/client/Client.ts">get</a>({ ...params }) -> Contentful.ContentTypeSchema</code></summary>
 <dl>
 <dd>
@@ -15,7 +13,6 @@
 <dd>
 
 Get a ContentType by Id
-
 </dd>
 </dl>
 </dd>
@@ -33,10 +30,10 @@ Get a ContentType by Id
 await client.contentTypes.get({
     spaceId: "yadj1kx9rmg0",
     environmentId: "master",
-    contentTypeId: "blogPost",
+    contentTypeId: "blogPost"
 });
-```
 
+```
 </dd>
 </dl>
 </dd>
@@ -50,20 +47,21 @@ await client.contentTypes.get({
 <dl>
 <dd>
 
-**request:** `Contentful.GetContentTypesRequest`
-
+**request:** `Contentful.GetContentTypesRequest` 
+    
 </dd>
 </dl>
 
 <dl>
 <dd>
 
-**requestOptions:** `ContentTypes.RequestOptions`
+**requestOptions:** `ContentTypesClient.RequestOptions` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
 
-</dd>
-</dl>
-</dd>
-</dl>
 
 </dd>
 </dl>
@@ -82,7 +80,6 @@ await client.contentTypes.get({
 <dd>
 
 Get ContentTypes
-
 </dd>
 </dl>
 </dd>
@@ -99,10 +96,10 @@ Get ContentTypes
 ```typescript
 await client.contentTypes.list({
     spaceId: "yadj1kx9rmg0",
-    environmentId: "master",
+    environmentId: "master"
 });
-```
 
+```
 </dd>
 </dl>
 </dd>
@@ -116,27 +113,27 @@ await client.contentTypes.list({
 <dl>
 <dd>
 
-**request:** `Contentful.ListContentTypesRequest`
-
+**request:** `Contentful.ListContentTypesRequest` 
+    
 </dd>
 </dl>
 
 <dl>
 <dd>
 
-**requestOptions:** `ContentTypes.RequestOptions`
+**requestOptions:** `ContentTypesClient.RequestOptions` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
 
-</dd>
-</dl>
-</dd>
-</dl>
 
 </dd>
 </dl>
 </details>
 
 ## entries
-
 <details><summary><code>client.entries.<a href="/src/api/resources/entries/client/Client.ts">get</a>({ ...params }) -> Contentful.EntrySchema</code></summary>
 <dl>
 <dd>
@@ -150,7 +147,6 @@ await client.contentTypes.list({
 <dd>
 
 Retrieve an entry by ID
-
 </dd>
 </dl>
 </dd>
@@ -168,10 +164,10 @@ Retrieve an entry by ID
 await client.entries.get({
     spaceId: "yadj1kx9rmg0",
     environmentId: "master",
-    entryId: "1nG4SkuMy0WenQUG6z2aEw",
+    entryId: "1nG4SkuMy0WenQUG6z2aEw"
 });
-```
 
+```
 </dd>
 </dl>
 </dd>
@@ -185,20 +181,21 @@ await client.entries.get({
 <dl>
 <dd>
 
-**request:** `Contentful.GetEntriesRequest`
-
+**request:** `Contentful.GetEntriesRequest` 
+    
 </dd>
 </dl>
 
 <dl>
 <dd>
 
-**requestOptions:** `Entries.RequestOptions`
+**requestOptions:** `EntriesClient.RequestOptions` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
 
-</dd>
-</dl>
-</dd>
-</dl>
 
 </dd>
 </dl>
@@ -217,7 +214,6 @@ await client.entries.get({
 <dd>
 
 Retrieve a collection of entries
-
 </dd>
 </dl>
 </dd>
@@ -235,10 +231,10 @@ Retrieve a collection of entries
 await client.entries.list({
     spaceId: "yadj1kx9rmg0",
     environmentId: "master",
-    contentType: "blogPost",
+    contentType: "blogPost"
 });
-```
 
+```
 </dd>
 </dl>
 </dd>
@@ -252,20 +248,21 @@ await client.entries.list({
 <dl>
 <dd>
 
-**request:** `Contentful.ListEntriesRequest`
-
+**request:** `Contentful.ListEntriesRequest` 
+    
 </dd>
 </dl>
 
 <dl>
 <dd>
 
-**requestOptions:** `Entries.RequestOptions`
+**requestOptions:** `EntriesClient.RequestOptions` 
+    
+</dd>
+</dl>
+</dd>
+</dl>
 
-</dd>
-</dl>
-</dd>
-</dl>
 
 </dd>
 </dl>

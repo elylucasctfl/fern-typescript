@@ -1,2 +1,2 @@
-export { type GetEntriesRequest } from "./GetEntriesRequest.js";
-export { type ListEntriesRequest } from "./ListEntriesRequest.js";
+export type { GetEntriesRequest } from "./GetEntriesRequest.js";
+export type { ListEntriesRequest } from "./ListEntriesRequest.js";
