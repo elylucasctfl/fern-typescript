@@ -1,4 +1,7 @@
+import { fetcher } from "core/index.js";
 import { ContentfulClient as GeneratedClient } from "../Client.js";
+import { createCustomFetcher } from "./CustomFetcher.js";
+import { ExtendedEntries } from './extended-entries.js';
 // import { ExtendedEntries } from "./extended-entries.js";
 
 type ClientOptions = GeneratedClient.Options;
@@ -23,12 +26,13 @@ export class ContentfulClient extends GeneratedClient {
             ...rest,
             token: isPreview ? previewToken! : accessToken!,
             baseUrl: isPreview ? `https://preview.${host}` : `https://cdn.${host}`,
+            fetcher: createCustomFetcher(),
         };
         super(newOptions);
     }
     // protected _entriesEx: ExtendedEntries | undefined;
 
-    // public override get entries(): ExtendedEntries {
-    //     return (this._entriesEx ??= new ExtendedEntries(this._options));
-    // }
+    public override get entries(): ExtendedEntries {
+      return true as any;// (this._entriesEx ??= new ExtendedEntries(this._options));
+    }
 }
